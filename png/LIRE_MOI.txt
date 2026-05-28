@@ -1,0 +1,20 @@
+Dossier PNG - Charonne Boost
+============================
+
+Ce dossier contient les icones et logos charges directement par l'interface.
+
+Fichiers importants :
+- logo2.png / logo2_full.png : logos utilises dans les rapports et certains onglets.
+- firefox.png, chrome.png, vlc.png, etc. : icones des logiciels de l'onglet Logiciels.
+- bloat_*.png : icones optionnelles des bloatwares.
+
+Depuis la version nettoyee, le fichier modules/00_icons.ps1 a ete supprime :
+les icones ne sont plus embarquees en Base64 dans un gros fichier PowerShell.
+On garde ce dossier PNG, plus simple a maintenir, remplacer et versionner.
+
+Les icones bloatwares sont chargees ainsi :
+1. icone locale png/bloat_*.png si elle existe ;
+2. sinon tentative automatique via AppxManifest.xml de l'application installee ;
+3. sinon initiale/fallback graphique.
+
+L'ancien script bloatware.ps1 a ete fusionne dans modules/03_tab_bloatwares.ps1.
