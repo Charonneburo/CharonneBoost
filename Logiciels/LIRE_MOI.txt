@@ -1,0 +1,10 @@
+Ce dossier est un cache d installeurs telecharges.
+
+Les installeurs sont telecharges automatiquement lors de la premiere
+installation d un logiciel, puis reutilises pour les installations suivantes.
+
+Format : NomLogiciel-setup.exe
+Exemple : npp-setup.exe (Notepad++)
+
+Le dossier peut etre vide sans impact fonctionnel.
+Vider ce dossier force un re-telechargement au prochain usage.
